@@ -1,5 +1,4 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
-$(function() {
     $(".eat-button").on("click", function(event) {
       var id = $(this).data("id");
       var newSleep = $(this).data("newsleep");
@@ -9,7 +8,7 @@ $(function() {
       }
   
       // Send the PUT request.
-      $.ajax("/api/cats/" + id, {
+      $.ajax("/api/burger/" + id, {
         type: "PUT",
         data: newBurger
       }).then(
@@ -25,8 +24,8 @@ $(function() {
       event.preventDefault();
   
       var newBurger = {
-        name: $("#ca").val().trim(),
-        sleepy: $("[name=sleepy]:checked").val().trim()
+        burger_name: $("#ca").val().trim(),
+        devoured: $("[name=sleepy]:checked").val().trim()
       };
   
       // Send the POST request.
@@ -41,5 +40,5 @@ $(function() {
         }
       );
     });
-  });
+
   

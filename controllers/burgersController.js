@@ -1,19 +1,22 @@
 var express = require("express");
-var burger=require("../models/burger");
 
 var router = express.Router();
+
+var burger=require("../models/burger");
+
+
 
 router.get("/", function(req,res) {
     burger.selectAll(function(data){
         var hbsObject={
             burger: data
         };
-        res.render(hbsObject);
+        res.render("index", hbsObject);
     })
 });
 
 router.post("/api/burger", function(req, res) {
-    cat.createOne(["burger_name","devoured"], [req.body.burger_name, req.body.devoured], function(result) {
+    burger.insertOne(["burger_name","devoured"], [req.body.burger_name, req.body.devoured], function(result) {
       // Send back the ID of the new quote
       res.json({ id: result.insertId });
     });
@@ -39,3 +42,4 @@ router.post("/api/burger", function(req, res) {
     );
   });
   
+  module.exports=router;
