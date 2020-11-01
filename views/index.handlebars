@@ -1,22 +1,28 @@
-<h1>Burgers!</h1>
 
-<h2>Burgers, ready to devour.</h2>
+<div class="row p-4">
+<div class="col-1"></div>
+<div class="card col-3">
+<h4 class="card-title">Burgers, ready to devour.</h4>
 
-<ul>
+<ul class="card-body">
   {{#each burger}}
     {{#unless devoured}}
       <li> <div class="mb-2">
-          <img  src="/assets/img/burger.png" alt="burger">
+          <img  src="/assets/img/burger.png" alt="burger" class="burger-img">
           {{this.burger_name}}
-          <button type="button" class="eat-button btn btn-primary" data-id={{this.id}}> Eat this burger!</button>
+          <button type="button" class="eat-button btn btn-primary m-2" data-id={{this.id}}> Eat this burger!</button>
           </div>
     {{/unless}}
   {{/each}}
 </ul>
+</div>
 
-<h2>Burgers that have been devoured.</h2>
+<div class="col-4"></div>
 
-<ul>
+<div class="card col-3">
+<h4 class="card-title">Burgers that have been devoured.</h4>
+
+<ul class="card-body">
   {{#each burger}}
     {{#if devoured}}
         <li>
@@ -26,8 +32,19 @@
   {{/each}}
 </ul>
 
-<h2>Add a Burger</h2>
-<form class="create-form">
+</div>
+
+<div class="col-1"></div>
+
+</div>
+
+<div class="row p-4">
+
+<div class="col-8"></div>
+<div class="col-3 card">
+
+<h4 class="card-title">Add a Burger</h4>
+<form class="create-form card-body">
 
   <div class="form-group">
     <label for="ca">Burger Name:</label>
@@ -42,3 +59,7 @@
 
   <button type="submit" class="btn btn-primary">Add Burger</button>
 </form>
+
+<div class="col-1"></div>
+</div>
+</div>

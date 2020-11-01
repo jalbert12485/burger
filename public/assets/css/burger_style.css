@@ -1,4 +1,14 @@
-img{
-    height: 25px;
-    width: 25px
+.burger-img{
+    height: 40px;
+    width: 40px
+}
+
+.container{
+    position: relative;
+}
+#product-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
