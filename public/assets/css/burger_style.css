@@ -5,10 +5,19 @@
 
 .container{
     position: relative;
+    background-color: 	rgb(95, 69, 42, 1);
 }
 #product-background{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+}
+
+nav{
+    background-color: #5B6C7C;
+}
+
+#ca{
+    width: 80%;
 }
