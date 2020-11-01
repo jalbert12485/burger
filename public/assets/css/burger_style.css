@@ -21,3 +21,9 @@ nav{
 #ca{
     width: 80%;
 }
+
+figcaption{
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+}
