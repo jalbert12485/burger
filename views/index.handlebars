@@ -5,10 +5,11 @@
 <ul>
   {{#each burger}}
     {{#unless devoured}}
-      <li> <div>
-          <img src="../public/assets/img/burger.png" alt="burger">
+      <li> <div class="mb-2">
+          <img  src="/assets/img/burger.png" alt="burger">
           {{this.burger_name}}
-          <button type="button" class="eat-button" data-id={{this.id}}> Eat this burger!</button>
+          <button type="button" class="eat-button btn btn-primary" data-id={{this.id}}> Eat this burger!</button>
+          </div>
     {{/unless}}
   {{/each}}
 </ul>
@@ -39,5 +40,5 @@
     <input type="radio" name="sleepy" value="0"> No
   </div>
 
-  <button type="submit">Add Burger</button>
+  <button type="submit" class="btn btn-primary">Add Burger</button>
 </form>
