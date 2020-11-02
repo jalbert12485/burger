@@ -1,12 +1,18 @@
+/* Setting the size of the burger images. */
 .burger-img{
     height: 40px;
     width: 40px
 }
 
+/* adding background color, also make position relative so background image can be absolute. */
+
 .container{
     position: relative;
     background-color: 	rgb(95, 69, 42, 1);
 }
+
+/* Background picture to cover width of container and be positioned absolutely within container. */
+
 #product-background{
     position: absolute;
     top: 0;
@@ -21,6 +27,8 @@ nav{
 #ca{
     width: 80%;
 }
+
+/* Place a caption with link and credit to photographer of picture. */
 
 figcaption{
     position: absolute;

@@ -1,5 +1,6 @@
 var orm=require("../config/orm");
 
+// The burger model which will allow for the calling of gets, posts, puts when buttons pushed.
 var burger = {
     selectAll: function(cb) {
       orm.selectAll("burger", function(res) {

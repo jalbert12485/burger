@@ -1,9 +1,12 @@
 
+{{!-- Put the brugers in one row, with space in the middle. --}}
+
 <div class="row p-4">
 <div class="col-1"></div>
+{{!-- Burgers that have not been eaten --}}
 <div class="card col-3">
 <h4 class="card-title">Burgers, ready to devour.</h4>
-
+{{!-- Loops through burgers and displays an li for each non-eaten burger. --}}
 <ul class="card-body">
   {{#each burger}}
     {{#unless devoured}}
@@ -19,9 +22,11 @@
 
 <div class="col-4"></div>
 
+{{!-- eaten burgers --}}
 <div class="card col-3">
 <h4 class="card-title">Burgers that have been devoured.</h4>
 
+{{!-- loops through burgers and creates an li for each eaten burger. --}}
 <ul class="card-body">
   {{#each burger}}
     {{#if devoured}}
@@ -42,7 +47,7 @@
 
 <div class="col-8"></div>
 <div class="col-3 card">
-
+{{!-- Add a burger form placed in row beneath eaten burgers --}}
 <h4 class="card-title">Add a Burger</h4>
 <form class="create-form card-body">
 

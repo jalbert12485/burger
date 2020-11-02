@@ -2,20 +2,25 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	{{!-- Include bootstrap and our css --}}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="/assets/css/burger_style.css" type="text/css" />
 		<title>Burgers!</title>
+		{{!-- include jquery js --}}
 		<script src="https://code.jquery.com/jquery.js"></script>
 		
 	</head>
 	<body>
-
+		{{!-- Navbar to display name of page. --}}
 		<nav class="navbar navbar-light">
 			<img src="/assets/img/burger.png" alt="Bar" class="burger-img">
   <h1 class="navbar-brand mb-0 ml-2 mr-auto h1">Burgers!</h1>
 </nav>
 
+{{!-- the container for the content we will input --}}
 	<div class="container mr-auto ml-auto" id="product-container">
+
+		{{!-- background image for the container --}}
 
     <img src="/assets/img/background.jpg" alt="Bar" class="mr-auto ml-auto" id="product-background" >
 	<figcaption> <a href="https://www.pexels.com/photo/woman-in-front-of-table-1267315/" target="_blank">Photo by ELEVATE from Pexels</a></figcaption>
