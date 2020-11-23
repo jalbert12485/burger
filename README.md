@@ -1,4 +1,4 @@
-# Employee Tracker 
+# Burger
 ## Table of Contents 
  * [About](#About) 
  * [Usage](#Usage) 
