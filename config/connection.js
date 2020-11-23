@@ -2,7 +2,7 @@
 var mysql = require("mysql");
 
 var connection 
-
+// If deployed we use the jawsdb database url provided by heroku, otherwise we use the local database.
 var connection;
 if(process.env.JAWSDB_URL){
   connection=mysql.createConnection(process.env.JAWSDB_URL);
