@@ -23,7 +23,7 @@ npm i
  ```    
 and run the server using 
 ```sh 
-npm i
+node server.js
  ```    
 ## Contributing
  If you would like more information about this project or have suggestion for contributing, please contact me by [email](mailto:jalbert@carthage.edu).  Any additional information you would like to give me in your email will be greatly appreciated.
